@@ -3,8 +3,8 @@ import MainLayout from "./../layout/MainLayout";
 const About = () => {
   return (
     <MainLayout>
-      <div className="bg-[#EBB503]">
-        <div className="m-auto max-w-[1400px] px-5 py-[50px] md:py-[80px]">
+      <div className="">
+        <div className="m-auto max-w-[1400px] px-12 py-[50px] md:py-[80px]">
           <div className="flex justify-center items-center flex-col">
             <h2 className="text-[25px] md:text-[30px] font-semibold mb-5 uppercase">
               About Us
@@ -27,7 +27,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="m-auto max-w-[1400px] px-5">
+      <div className="m-auto max-w-[1400px] px-12">
         <Faq />
       </div>
     </MainLayout>

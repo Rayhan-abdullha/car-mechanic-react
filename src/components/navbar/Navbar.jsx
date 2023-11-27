@@ -52,7 +52,7 @@ const Navbar = () => {
                   </Link>
                   <Link
                     className="text-[19px] italic hover:text-yellow-400"
-                    to={"/services"}
+                    to={"/limo-services"}
                   >
                     Limo Services
                   </Link>

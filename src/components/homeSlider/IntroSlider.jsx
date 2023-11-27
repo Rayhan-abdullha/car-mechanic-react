@@ -22,7 +22,14 @@ const IntroSlider = () => {
             backgroundImage: `url(${image})`,
             zIndex: index === currentImageIndex ? 1 : 0,
           }}
-        />
+        >
+          <div className="translate-y-[40%] lg:translate-y-2/4 w-[90%] lg:w-[60%] mx-auto lg:mx-0 text-white   h-full text-center">
+            <h2 className="text-2xl font-medium">Drive the extraordinary:</h2>
+            <p className="text-2xl mt-2">
+              Where Every Mile is a symphony of Luxury
+            </p>
+          </div>
+        </div>
       ))}
     </div>
   );

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { createBrowserRouter } from "react-router-dom";
 import Home from "../pages/Home";
 import NotFound from "../pages/Notfound";
@@ -26,7 +27,7 @@ const router = createBrowserRouter([
     element: <About />,
   },
   {
-    path: "/services",
+    path: "/limo-services",
     element: <Services />,
   },
   {

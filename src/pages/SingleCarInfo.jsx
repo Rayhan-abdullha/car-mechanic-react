@@ -1,5 +1,6 @@
-import PhotoDetails from "../components/carDetails/photoDetails";
+// import PhotoDetails from "../components/carDetails/photoDetails";
 import MainLayout from "./../layout/MainLayout";
+import PhotoDetails from "../components/carDetails/PhotoDetails";
 
 const SingleCarInfo = () => {
   return (

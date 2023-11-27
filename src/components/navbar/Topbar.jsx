@@ -3,7 +3,7 @@ import { IoIosPhonePortrait } from "react-icons/io";
 import { CiLocationOn } from "react-icons/ci";
 const Topbar = () => {
   return (
-    <div className="topbar flex flex-col md:flex-row md:justify-between gap-3 md:gap-1 pt-5">
+    <div className="topbar flex flex-col md:flex-row md:justify-between gap-3 md:gap-1 md:pt-5">
       <p>
         <CiLocationOn className="float-left mr-1 text-yellow-300 text-[20px] md:text-[25px]" />
         <span className="text-[13px] lg:text-[16px]">

@@ -5,7 +5,10 @@ const Slider = () => {
   return (
     <>
       <div className="carousel w-full">
-        <div id="slide1" className="carousel-item relative w-full flex">
+        <div
+          id="slide1"
+          className="carousel-item relative w-full flex flex-col sm:flex-row"
+        >
           <div
             className="basis-[50%] cursor-pointer"
             onClick={() => navigate("/car_details/1")}
@@ -25,7 +28,10 @@ const Slider = () => {
             </a>
           </div>
         </div>
-        <div id="slide2" className="carousel-item relative w-full">
+        <div
+          id="slide2"
+          className="carousel-item relative w-full flex flex-col sm:flex-row"
+        >
           <div
             className="basis-[50%] cursor-pointer"
             onClick={() => navigate("/car_details/1")}
@@ -45,7 +51,10 @@ const Slider = () => {
             </a>
           </div>
         </div>
-        <div id="slide3" className="carousel-item relative w-full">
+        <div
+          id="slide3"
+          className="carousel-item relative w-full flex flex-col sm:flex-row"
+        >
           <div
             className="basis-[50%] cursor-pointer"
             onClick={() => navigate("/car_details/1")}
@@ -65,7 +74,10 @@ const Slider = () => {
             </a>
           </div>
         </div>
-        <div id="slide4" className="carousel-item relative w-full">
+        <div
+          id="slide4"
+          className="carousel-item relative w-full flex flex-col sm:flex-row"
+        >
           <div
             className="basis-[50%] cursor-pointer"
             onClick={() => navigate("/car_details/1")}

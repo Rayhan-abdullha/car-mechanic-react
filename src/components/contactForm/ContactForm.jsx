@@ -89,7 +89,10 @@ function ContactForm() {
           purchase.
         </p>
       </div>
-      <button className="bg-[#dad014] py-2 px-3" type="submit">
+      <button
+        className="bg-[#FCC500] hover:bg-[#e7b607] text-white font-semibold text-[17px] py-2 px-3"
+        type="submit"
+      >
         Submit
       </button>
     </form>

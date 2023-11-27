@@ -29,3 +29,32 @@ body {
   border-radius: 10px;
   object-fit: cover;
 }
+/* Slider container */
+.slider-container {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+
+/* Slide style */
+.slide {
+  flex: 0 0 100%;
+  transition: transform 1s ease, opacity 0.5s ease; /* Add opacity transition */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+}
+
+/* Active slide */
+.slide.active {
+  opacity: 1;
+  transform: scale(1.1); /* Adjust scale as needed */
+}

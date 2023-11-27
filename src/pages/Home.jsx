@@ -4,6 +4,7 @@ import Slider from "../components/carSlider/Slider";
 // import { useEffect, useState } from "react";
 import GoogleMapLocation from "../components/googleMapLocation/GoogleMapLocation";
 import ContactInfo from "./../components/contactForm/ContactInfo";
+import IntroSlider from "../components/homeSlider/IntroSlider";
 const Home = () => {
   // const [animationPosition, setAnimationPosition] = useState(0);
   const imageSrc =
@@ -29,14 +30,7 @@ const Home = () => {
   return (
     <MainLayout>
       <main>
-        <div
-          className="h-[500px] w-full bg-cover bg-top"
-          style={{
-            backgroundImage: `url('${imageSrc}')`,
-            backgroundPositionY: `-${100}px`, // Adjusts background position
-            transition: "background-position 1s ease-in-out", // Transition effect
-          }}
-        />
+        <IntroSlider />
         <div className="car-section m-auto px-5 max-w-[1400px] my-[70px]">
           <Slider />
         </div>

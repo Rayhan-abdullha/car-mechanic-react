@@ -1,16 +1,16 @@
 import { AiOutlineIssuesClose } from "react-icons/ai";
 const RentalRequirement = () => {
   return (
-    <div className="requirement-card m-auto px-5 max-w-[1400px]">
-      <div className="flex justify-between">
+    <div className="requirement-card m-auto px-5 max-w-[1400px] text-black my-[70px]">
+      <div className="sm:flex sm:justify-between px-1 text-center">
         <h3 className="uppercase text-[20px] font-semibold mb-3">
           Rental Requirement
         </h3>
-        <h3 className="uppercase text-[20px] font-semibold mb-3">
+        <h3 className="sm:uppercase sm:text-[20px] sm:font-semibold mb-10 sm:mb-3">
           United State Drivers
         </h3>
       </div>
-      <div className="bg-gray-200 py-5 rounded-[10px] border border-gray-300">
+      <div className="bg-[#E6E6E6] py-5 rounded-[10px] border border-gray-300">
         <h2 className="bg-white py-7 text-center mx-5 font-semibold rounded-[10px]">
           Exotic Cars & SUVs
         </h2>

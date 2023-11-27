@@ -1,10 +1,11 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import logo from "../../assets/logo.png";
 import Topbar from "./Topbar";
 import { useEffect, useState } from "react";
-import { CiMenuFries } from "react-icons/ci";
+import { CgMenuRound } from "react-icons/cg";
 import DropdownMenu from "./DropdownMenu";
 const Navbar = () => {
+  const navigate = useNavigate()
   const [showIcon, setShowIcon] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
   const handleResize = () => {
@@ -32,12 +33,13 @@ const Navbar = () => {
       <div className="m-auto px-5 max-w-[1400px]">
         <Topbar />
         {showIcon ? (
-          <div onClick={handleShowMenu} className="pb-5 mt-8">
-            <CiMenuFries className="text-[30px] cursor-pointer font-bold hover:text-white" />
+          <div onClick={handleShowMenu} className="pb-5 mt-8 ml-[-7px]">
+            <CgMenuRound className="text-[40px] cursor-pointer font-bold text-white" />
+            <span>Menu</span>
           </div>
         ) : (
           <div className="menu-bar flex justify-between items-center">
-            <div className="logo">
+            <div className="logo cursor-pointer" onClick={() => navigate('/')}>
               <img className="w-[100px]" src={logo} alt="notfound" />
             </div>
             <nav>

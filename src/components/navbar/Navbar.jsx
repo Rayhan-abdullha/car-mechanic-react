@@ -8,7 +8,6 @@ const Navbar = () => {
   const navigate = useNavigate();
   const [showIcon, setShowIcon] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
-  console.log(showMenu);
   const handleResize = () => {
     if (window.innerWidth < 768) {
       setShowIcon(true);

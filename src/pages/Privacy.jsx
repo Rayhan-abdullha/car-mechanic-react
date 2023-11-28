@@ -1,7 +1,9 @@
 import React from "react";
 import MainLayout from "../layout/MainLayout";
+import useScrollTop from "../hook/useScroll";
 
 const PrivacyPolicy = () => {
+  useScrollTop();
   return (
     <MainLayout>
       <div className="bg-gray-100 min-h-screen p-8">

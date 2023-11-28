@@ -7,6 +7,8 @@ import About from "../pages/About";
 import Services from "../pages/Services";
 import SingleCarInfo from "../pages/SingleCarInfo";
 import Vahicles from "../pages/Vahicles";
+import PrivacyPolicy from "../pages/Privacy";
+import TermsAndConditions from "../pages/TermsCondition";
 
 const router = createBrowserRouter([
   {
@@ -22,12 +24,20 @@ const router = createBrowserRouter([
     element: <Vahicles />,
   },
   {
+    path: "privacy-policy",
+    element: <PrivacyPolicy />,
+  },
+  {
     path: "about",
     element: <About />,
   },
   {
     path: "/limo-services",
     element: <Services />,
+  },
+  {
+    path: "/terms-condition",
+    element: <TermsAndConditions />,
   },
   {
     path: "car_details/:id",

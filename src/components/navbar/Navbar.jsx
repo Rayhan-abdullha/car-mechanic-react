@@ -34,10 +34,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div
-      className="bg-black text-[#bdc3c7]"
-      // [#2d3436]
-    >
+    <div className="bg-black text-[#bdc3c7]">
       <div className="m-auto px-5 max-w-[1400px] flex md:block items-center justify-between py-5 md:py-0">
         <Topbar />
         {showIcon ? (
@@ -55,7 +52,7 @@ const Navbar = () => {
                 <li className="flex gap-10">
                   <Link
                     className="text-[19px] italic hover:text-yellow-400"
-                    to={"/vahicles"}
+                    to={"/vehicles"}
                   >
                     Vahicles
                   </Link>

@@ -25,7 +25,7 @@ const IntroSlider = () => {
         />
       ))}
 
-      <div className="welcome-tet absolute top-[30%] left-[30%] z-[999]">
+      <div className="welcome-tet absolute top-[30%] left-0 z-[999] w-[100%]">
         <h1 className="intro-text-animation">
           Welcome
           <div className="roller">

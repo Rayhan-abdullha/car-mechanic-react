@@ -13,7 +13,7 @@ function ContactInfo() {
           <p className="underline font-medium">465-851-1013</p>
           <p className="underline font-medium">info@mtbexotics.com</p>
         </div>
-        <h2 className="mb-5 md:mb-0 font-semibold text-[26px]  ">
+        <h2 className="mb-5 md:mb-0 font-semibold text-[26px] mt-5 md:mt-0 ">
           Contact Us anytime if You have trouble finding our Showroom
         </h2>
       </div>

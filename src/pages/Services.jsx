@@ -65,7 +65,7 @@ const Services = () => {
               <input
                 className="p-2 rounded-md"
                 type="text"
-                name=""
+                name="lasName"
                 onChange={handleChange}
                 value={formData.lastName}
                 placeholder="Last Name"

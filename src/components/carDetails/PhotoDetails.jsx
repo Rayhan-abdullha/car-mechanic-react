@@ -1,5 +1,4 @@
 import Gallery from "./gallery";
-
 const PhotoDetails = () => {
   return (
     <div className="m-auto max-w-[1400px] px-5">

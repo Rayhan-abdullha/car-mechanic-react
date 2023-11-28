@@ -1,4 +1,4 @@
-import { AiOutlineIssuesClose } from "react-icons/ai";
+import { FiAlertOctagon } from "react-icons/fi";
 const RentalRequirement = () => {
   return (
     <div className="requirement-card m-auto px-5 max-w-[1400px] text-black my-[70px]">
@@ -23,7 +23,7 @@ const RentalRequirement = () => {
                   Tooltip text
                 </span>
               </span>
-              <AiOutlineIssuesClose className="mt-[5px]" />
+              <FiAlertOctagon className="mt-[5px] ml-1" />
             </div>
             <div className="relative group mb-3 flex sm:justify-center">
               <span className="hover:cursor-pointer font-semibold">
@@ -32,7 +32,7 @@ const RentalRequirement = () => {
                   Tooltip text
                 </span>
               </span>
-              <AiOutlineIssuesClose className="mt-[5px]" />
+              <FiAlertOctagon className="mt-[5px] ml-1" />
             </div>
             <div className="relative group mb-3 flex sm:justify-center">
               <span className="hover:cursor-pointer font-semibold">
@@ -41,7 +41,7 @@ const RentalRequirement = () => {
                   Tooltip text
                 </span>
               </span>
-              <AiOutlineIssuesClose className="mt-[5px]" />
+              <FiAlertOctagon className="mt-[5px] ml-1" />
             </div>
           </div>
           <div>
@@ -52,7 +52,7 @@ const RentalRequirement = () => {
                   Tooltip text
                 </span>
               </span>
-              <AiOutlineIssuesClose className="mt-[5px]" />
+              <FiAlertOctagon className="mt-[5px] ml-1" />
             </div>
             <div className="relative group mb-3 flex sm:justify-center">
               <span className="hover:cursor-pointer font-semibold">
@@ -61,7 +61,7 @@ const RentalRequirement = () => {
                   Tooltip text
                 </span>
               </span>
-              <AiOutlineIssuesClose className="mt-[5px]" />
+              <FiAlertOctagon className="mt-[5px] ml-1" />
             </div>
             <div className="relative group mb-3 flex sm:justify-center">
               <span className=" hover:cursor-pointer font-semibold">
@@ -70,7 +70,7 @@ const RentalRequirement = () => {
                   Tooltip text
                 </span>
               </span>
-              <AiOutlineIssuesClose className="mt-[5px]" />
+              <FiAlertOctagon className="mt-[5px] ml-1" />
             </div>
           </div>
         </div>

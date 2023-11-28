@@ -8,6 +8,7 @@ const Navbar = () => {
   const navigate = useNavigate();
   const [showIcon, setShowIcon] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
+  console.log(showMenu);
   const handleResize = () => {
     if (window.innerWidth < 768) {
       setShowIcon(true);
@@ -22,11 +23,16 @@ const Navbar = () => {
   };
 
   useEffect(() => {
+    if (window.innerWidth < 792) {
+      setShowIcon(true);
+      setShowMenu(false);
+    }
     window.addEventListener("resize", handleResize);
     return () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
   return (
     <div className="bg-[#2d3436] text-[#bdc3c7]">
       <div className="m-auto px-5 max-w-[1400px] flex md:block items-center justify-between py-5 md:py-0">
@@ -42,39 +48,37 @@ const Navbar = () => {
               <img className="w-[100px]" src={logo} alt="notfound" />
             </div>
             <nav>
-              <ul>
-                <li className="flex gap-10">
-                  <Link
-                    className="text-[19px] italic hover:text-yellow-400"
-                    to={"/vahicles"}
-                  >
-                    Vahicles
-                  </Link>
-                  <Link
-                    className="text-[19px] italic hover:text-yellow-400"
-                    to={"/services"}
-                  >
-                    Limo Services
-                  </Link>
-                  <Link
-                    className="text-[19px] italic hover:text-yellow-400"
-                    to={"/contact"}
-                  >
-                    Contact
-                  </Link>
-                  <Link
-                    className="text-[19px] italic hover:text-yellow-400"
-                    to={"/book_now"}
-                  >
-                    Book Now
-                  </Link>
-                  <Link
-                    className="text-[19px] italic hover:text-yellow-400"
-                    to={"/about"}
-                  >
-                    About
-                  </Link>
-                </li>
+              <ul className="flex gap-10">
+                <Link
+                  className="text-[19px] italic hover:text-yellow-400"
+                  to={"/vehicles"}
+                >
+                  vehicles
+                </Link>
+                <Link
+                  className="text-[19px] italic hover:text-yellow-400"
+                  to={"/services"}
+                >
+                  Limo Services
+                </Link>
+                <Link
+                  className="text-[19px] italic hover:text-yellow-400"
+                  to={"/contact"}
+                >
+                  Contact
+                </Link>
+                <Link
+                  className="text-[19px] italic hover:text-yellow-400"
+                  to={"/book_now"}
+                >
+                  Book Now
+                </Link>
+                <Link
+                  className="text-[19px] italic hover:text-yellow-400"
+                  to={"/about"}
+                >
+                  About
+                </Link>
               </ul>
             </nav>
           </div>

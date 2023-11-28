@@ -24,6 +24,23 @@ const IntroSlider = () => {
           }}
         />
       ))}
+
+      <div className="welcome-tet absolute top-[30%] left-[30%] z-[999]">
+        <h1 className="intro-text-animation">
+          Welcome
+          <div className="roller">
+            <span id="rolltext">
+              Drive The Extraordinary
+              <br />
+              Where Every Mile
+              <br />
+              is a Extra Luxury
+              <br />
+            </span>
+            <br />
+          </div>
+        </h1>
+      </div>
     </div>
   );
 };

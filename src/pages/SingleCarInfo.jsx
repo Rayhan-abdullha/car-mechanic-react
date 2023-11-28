@@ -1,9 +1,10 @@
-import PhotoDetails from "../components/carDetails/photoDetails";
+// import PhotoDetails from "../components/carDetails/photoDetails";
 import MainLayout from "./../layout/MainLayout";
 import GoogleMapLocation from "./../components/googleMapLocation/GoogleMapLocation";
 import ContactInfo from "./../components/contactForm/ContactInfo";
 import RentalRequirement from "./../components/RentalRequirement/RentalRequirement";
 import { Link, Element } from "react-scroll";
+import PhotoDetails from "../components/carDetails/PhotoDetails";
 
 const SingleCarInfo = () => {
   return (

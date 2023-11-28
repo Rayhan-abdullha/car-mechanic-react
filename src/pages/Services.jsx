@@ -30,23 +30,23 @@ const Services = () => {
 
   return (
     <MainLayout>
-      <div className="m-auto max-w-[1400px] px-5 py-[50px] md:py-[80px]">
+      <div className="m-auto max-w-[1400px] px-12 py-[50px] md:py-[80px]">
         <div className="flex justify-center items-center flex-col mb-10">
           <h2 className="text-[25px] md:text-[30px] font-semibold mb-5 uppercase">
             Lemo Services
           </h2>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+          <p>Limo Services Texts will be given by client.</p>
         </div>
 
-        <div className="sm:flex sm:justify-between sm:h-[500px]">
-          <div className="sm:basis-[50%]">
+        <div className="sm:flex sm:justify-between sm:h-[500px] gap-4">
+          <div className="sm:basis-[60%]">
             <img
               className="h-[100%] object-cover w-[100%]"
               src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNhcnN8ZW58MHx8MHx8fDA%3D"
               alt="notfound"
             />
           </div>
-          <div className="bg-black py-5 sm:basis-[50%]">
+          <div className="bg-black py-5 sm:basis-[40%]">
             <h3 className="text-white text-[20px] font-semibold text-center mb-5 uppercase">
               Instant Online Quote
             </h3>
@@ -71,18 +71,18 @@ const Services = () => {
                 placeholder="Last Name"
               />
               <select onChange={handleChange} className="py-2 rounded-md">
-                <option value="test">Test</option>
-                <option value="test">Test</option>
-                <option value="test">Test</option>
-                <option value="test">Test</option>
-                <option value="test">Test</option>
+                <option value="test">Select A Service Type</option>
+                <option value="test">Service A</option>
+                <option value="test">Service B</option>
+                <option value="test">Service C</option>
+                <option value="test">Service D</option>
               </select>
               <select onChange={handleChange} className="py-2 rounded-md">
-                <option value="test">Test</option>
-                <option value="test">Test</option>
-                <option value="test">Test</option>
-                <option value="test">Test</option>
-                <option value="test">Test</option>
+                <option value="test">Select A Vehicle Type</option>
+                <option value="test">Vehicle A</option>
+                <option value="test">Vehicle B</option>
+                <option value="test">Vehicle C</option>
+                <option value="test">Vehicle D</option>
               </select>
               <input
                 className="p-2 rounded-md"
@@ -117,19 +117,13 @@ const Services = () => {
                 placeholder="Pick Up Time"
               />
               <select onChange={handleChange}>
-                <option value="test">Test</option>
-                <option value="test">Test</option>
-                <option value="test">Test</option>
-                <option value="test">Test</option>
-                <option value="test">Test</option>
+                <option value="test">#Hours</option>
+                <option value="test">1:00</option>
+                <option value="test">2:00</option>
+                <option value="test">3:00</option>
+                <option value="test">4:00</option>
               </select>
-              <select onChange={handleChange}>
-                <option value="test">Test</option>
-                <option value="test">Test</option>
-                <option value="test">Test</option>
-                <option value="test">Test</option>
-                <option value="test">Test</option>
-              </select>
+
               <input
                 className="p-2 rounded-md"
                 type="phone"
@@ -139,7 +133,7 @@ const Services = () => {
                 placeholder="Phone"
               />
               <input
-                className="p-2 rounded-md"
+                className="p-2 rounded-md w-full block"
                 type="email"
                 name="email"
                 onChange={handleChange}

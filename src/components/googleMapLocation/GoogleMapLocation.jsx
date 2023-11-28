@@ -24,8 +24,10 @@ const GoogleMapLocation = () => {
   }
 
   return (
-    <div className="m-auto px-5 max-w-[1400px] rounded-md my-[70px]">
-      <h2 className="mb-4 font-semibold text-[20px] uppercase">Google Map</h2>
+    <div className="m-auto  max-w-[1400px] rounded-md my-[70px] px-12">
+      <h2 className="mb-4 font-semibold text-[20px] uppercase">
+        Pickup Location
+      </h2>
       <GoogleMap
         mapContainerStyle={mapContainerStyle}
         zoom={10}

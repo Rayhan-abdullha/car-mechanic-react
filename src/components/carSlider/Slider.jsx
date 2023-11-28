@@ -10,17 +10,17 @@ const Slider = () => {
           className="carousel-item relative w-full flex flex-col sm:flex-row"
         >
           <div
-            className="basis-[50%] cursor-pointer"
+            className="basis-[90%] cursor-pointer"
             onClick={() => navigate("/car_details/1")}
           >
             <img
-              src="https://imgd.aeplcdn.com/664x374/n/cw/ec/136217/x7-exterior-right-front-three-quarter-8.jpeg?isig=0&q=80"
+              src="https://imgd.aeplcdn.com/664x374/n/cw/ec/136217/x7-exterior-right-front-three-quarter-8.jpeg?isig=0&q=90"
               className="w-full h-[100%] object-cover"
             />
           </div>
           <CarDetails />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide4" className="btn btn-circle">
+            <a href="#slide3" className="btn btn-circle">
               ❮
             </a>
             <a href="#slide2" className="btn btn-circle">
@@ -33,7 +33,53 @@ const Slider = () => {
           className="carousel-item relative w-full flex flex-col sm:flex-row"
         >
           <div
-            className="basis-[50%] cursor-pointer"
+            className="basis-[90%] cursor-pointer"
+            onClick={() => navigate("/car_details/1")}
+          >
+            <img
+              src="https://imgd.aeplcdn.com/664x374/n/cw/ec/136217/x7-exterior-right-front-three-quarter-8.jpeg?isig=0&q=90"
+              className="w-full h-[100%] object-cover"
+            />
+          </div>
+          <CarDetails />
+          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" className="btn btn-circle">
+              ❮
+            </a>
+            <a href="#slide3" className="btn btn-circle">
+              ❯
+            </a>
+          </div>
+        </div>
+        <div
+          id="slide3"
+          className="carousel-item relative w-full flex flex-col sm:flex-row"
+        >
+          <div
+            className="basis-[90%] cursor-pointer"
+            onClick={() => navigate("/car_details/1")}
+          >
+            <img
+              src="https://imgd.aeplcdn.com/664x374/n/cw/ec/136217/x7-exterior-right-front-three-quarter-8.jpeg?isig=0&q=80"
+              className="w-full h-[100%] object-cover"
+            />
+          </div>
+          <CarDetails />
+          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" className="btn btn-circle">
+              ❮
+            </a>
+            <a href="#slide1" className="btn btn-circle">
+              ❯
+            </a>
+          </div>
+        </div>
+        {/* <div
+          id="slide2"
+          className="carousel-item relative w-full flex flex-col sm:flex-row"
+        >
+          <div
+            className="basis-[80%] cursor-pointer"
             onClick={() => navigate("/car_details/1")}
           >
             <img
@@ -56,7 +102,7 @@ const Slider = () => {
           className="carousel-item relative w-full flex flex-col sm:flex-row"
         >
           <div
-            className="basis-[50%] cursor-pointer"
+            className="basis-[80%] cursor-pointer"
             onClick={() => navigate("/car_details/1")}
           >
             <img
@@ -79,7 +125,7 @@ const Slider = () => {
           className="carousel-item relative w-full flex flex-col sm:flex-row"
         >
           <div
-            className="basis-[50%] cursor-pointer"
+            className="basis-[80%] cursor-pointer"
             onClick={() => navigate("/car_details/1")}
           >
             <img
@@ -96,7 +142,7 @@ const Slider = () => {
               ❯
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );

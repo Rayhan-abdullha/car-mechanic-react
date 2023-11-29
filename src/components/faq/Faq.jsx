@@ -12,7 +12,7 @@ const questions = [
     answer: "To use Tailwind CSS, you can either include it...",
   },
   {
-    id: 3,
+    id: 4,
     question: "How many miles are includes in the rental rate?",
     answer: "To use Tailwind CSS, you can either include it...",
   },

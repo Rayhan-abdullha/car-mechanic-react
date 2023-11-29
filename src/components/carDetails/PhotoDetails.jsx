@@ -33,7 +33,7 @@ const PhotoDetails = () => {
           </div>
         </div>
         <div className="mt-5 xl:mt-0">
-          <button className="bg-orange-500 rounded-sm px-4 py-2 text-white uppercase">
+          <button className="bg-orange-500 rounded-sm px-4 py-2 hover:bg-orange-600 text-white uppercase">
             call to book
           </button>
         </div>

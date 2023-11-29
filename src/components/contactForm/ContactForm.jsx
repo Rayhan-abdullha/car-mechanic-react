@@ -60,9 +60,9 @@ function ContactForm() {
         />
       </div>
       <div className="formGrup mb-4 flex flex-col">
-        <lebel className="mb-2">
+        <label className="mb-2">
           Your Message (vahicles, date, location, details)
-        </lebel>
+        </label>
         <textarea
           className="border border-[#c0c0c0] px-4 py-2 outline-none rounded-md"
           onChange={handleOnChange}

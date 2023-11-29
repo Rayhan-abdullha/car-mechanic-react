@@ -9,6 +9,7 @@ import SingleCarInfo from "../pages/SingleCarInfo";
 import Vahicles from "../pages/Vahicles";
 import PrivacyPolicy from "../pages/Privacy";
 import TermsAndConditions from "../pages/TermsCondition";
+import BookNow from "../pages/BookNow";
 
 const router = createBrowserRouter([
   {
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
   {
     path: "car_details/:id",
     element: <SingleCarInfo />,
+  },
+  {
+    path: "book-now",
+    element: <BookNow />,
   },
   {
     path: "*",

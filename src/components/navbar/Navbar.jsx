@@ -69,7 +69,7 @@ const Navbar = () => {
                   </Link>
                   <Link
                     className="text-[19px] italic hover:text-yellow-400"
-                    to={"/book_now"}
+                    to={"/book-now"}
                   >
                     Book Now
                   </Link>

@@ -4,7 +4,7 @@ import MainLayout from "./../layout/MainLayout";
 const BookNow = () => {
   return (
     <MainLayout>
-      <div className="h-[70vh] flex justify-center items-center px-12">
+      <div className="h-full flex justify-center items-center px-12">
         <iframe
           className="h-[300px] md:h-[500px]"
           width="1000px"

@@ -90,7 +90,7 @@ function ContactForm() {
         </p>
       </div>
       <button
-        className="bg-[#FCC500] hover:bg-[#e7b607] text-white font-semibold text-[17px] py-2 px-3"
+        className="bg-[#f8ac07]  hover:bg-[#e7b607] text-white font-semibold text-[17px] py-2 px-3"
         type="submit"
       >
         Submit

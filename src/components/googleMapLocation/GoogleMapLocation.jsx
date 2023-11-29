@@ -24,7 +24,7 @@ const GoogleMapLocation = () => {
   }
 
   return (
-    <div className="m-auto  max-w-[1400px] rounded-md my-[70px] px-12">
+    <div className="m-auto  max-w-[1400px] rounded-md my-[70px] px-12 lg:px-24">
       <h2 className="mb-4 font-semibold text-[20px]">Pickup Location</h2>
       <GoogleMap
         mapContainerStyle={mapContainerStyle}

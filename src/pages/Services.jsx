@@ -5,11 +5,12 @@ const Services = () => {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
-    searviceType: "",
+    serviceType: "",
     vehicleType: "",
     location: "",
     destination: "",
     date: "",
+    hours: "",
     guest: "",
     time: "",
     phone: "",
@@ -25,7 +26,7 @@ const Services = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData);
+    localStorage.setItem("quote", JSON.stringify(formData));
   };
 
   return (
@@ -65,24 +66,34 @@ const Services = () => {
               <input
                 className="p-2 rounded-md"
                 type="text"
-                name="lasName"
+                name="lastName"
                 onChange={handleChange}
                 value={formData.lastName}
                 placeholder="Last Name"
               />
-              <select onChange={handleChange} className="py-2 rounded-md">
+              <select
+                onChange={handleChange}
+                className="py-2 rounded-md"
+                name="serviceType"
+              >
                 <option value="test">Select A Service Type</option>
                 <option value="test">Service A</option>
                 <option value="test">Service B</option>
                 <option value="test">Service C</option>
                 <option value="test">Service D</option>
               </select>
-              <select onChange={handleChange} className="py-2 rounded-md">
+              <select
+                onChange={handleChange}
+                className="py-2 rounded-md"
+                name="vehicleType"
+              >
                 <option value="test">Select A Vehicle Type</option>
-                <option value="test">Vehicle A</option>
-                <option value="test">Vehicle B</option>
-                <option value="test">Vehicle C</option>
-                <option value="test">Vehicle D</option>
+                <option value="Vehicle A">Vehicle A</option>
+                <option value="Vehicle B">Vehicle B</option>
+                <option Vehicle C="test">
+                  Vehicle C
+                </option>
+                <option value="Vehicle D">Vehicle D</option>
               </select>
               <input
                 className="p-2 rounded-md"
@@ -95,7 +106,7 @@ const Services = () => {
               <input
                 className="p-2 rounded-md"
                 type="text"
-                name="vehicle"
+                name="destination"
                 onChange={handleChange}
                 value={formData.destination}
                 placeholder="Destination"
@@ -108,6 +119,7 @@ const Services = () => {
                 value={formData.date}
                 placeholder="Date"
               />
+
               <input
                 className="p-2 rounded-md"
                 type="time"
@@ -116,14 +128,27 @@ const Services = () => {
                 value={formData.time}
                 placeholder="Pick Up Time"
               />
-              <select onChange={handleChange}>
-                <option value="test">#Hours</option>
-                <option value="test">1:00</option>
-                <option value="test">2:00</option>
-                <option value="test">3:00</option>
-                <option value="test">4:00</option>
-              </select>
 
+              <select
+                onChange={handleChange}
+                name="hours"
+                className="p-2 rounded-md"
+              >
+                <option value="">#Hours</option>
+                <option value="1:00">1:00</option>
+                <option value="2:00">2:00</option>
+                <option value="3:00">3:00</option>
+                <option value="4:00">4:00</option>
+              </select>
+              <select
+                onChange={handleChange}
+                name="guest"
+                className="p-2 rounded-md"
+              >
+                <option value="">#Hours</option>
+                <option value="guest1">Guest 1</option>
+                <option value="guest2">Guest 2</option>
+              </select>
               <input
                 className="p-2 rounded-md"
                 type="phone"

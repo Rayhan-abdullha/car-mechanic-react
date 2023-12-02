@@ -18,7 +18,7 @@ const RentalRequirement = () => {
             <div className="relative gap-1 group mb-3 flex items-center sm:justify-center">
               <span className="hover:cursor-pointer font-semibold flex gap-4 ">
                 Age
-                <div className="tooltip absolute bg-black text-white text-xs py-1 px-2 rounded  opacity-0 invisible group-hover:opacity-100 w-48 flex flex-wrap text-clip text group-hover:visible transition duration-300 ease-in-out  bottom-6 -right-6">
+                <div className="tooltip absolute bg-black text-white text-xs py-1 px-2 rounded  opacity-0 invisible group-hover:opacity-100 w-48 flex flex-wrap text-clip text group-hover:visible transition duration-300 ease-in-out left-0 bottom-[30px] md:bottom-[30px] md:right-0">
                   Minimum Age requirements are strictly enforced and ensure
                   proper insurance protection. All renters who allow an underage
                   driver will be fined $2,500 and their rental will be
@@ -34,7 +34,7 @@ const RentalRequirement = () => {
                 stroke="currentColor"
                 stroke-width="2"
                 stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinejoin="round"
               >
                 <circle cx="12" cy="12" r="10" stroke="#888" />
                 <line x1="12" y1="16" x2="12" y2="12" stroke="#888" />
@@ -44,7 +44,7 @@ const RentalRequirement = () => {
             <div className="relative gap-1 group mb-3 flex items-center sm:justify-center">
               <span className="hover:cursor-pointer font-semibold flex gap-4 ">
                 Driver Licence
-                <div className="tooltip absolute bg-black text-white text-xs py-1 px-2 rounded  opacity-0 invisible group-hover:opacity-100 w-48 flex flex-wrap text-clip text group-hover:visible transition duration-300 ease-in-out  bottom-6 -right-6">
+                <div className="tooltip absolute bg-black text-white text-xs py-1 px-2 rounded  opacity-0 invisible group-hover:opacity-100 w-48 flex flex-wrap text-clip text group-hover:visible transition duration-300 ease-in-out bottom-6 left-0">
                   All renters must have a valid driver's license within the
                   United States, be 21+ yrs of age, and have full coverage
                   insurance.
@@ -59,7 +59,7 @@ const RentalRequirement = () => {
                 stroke="currentColor"
                 stroke-width="2"
                 stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinejoin="round"
               >
                 <circle cx="12" cy="12" r="10" stroke="#888" />
                 <line x1="12" y1="16" x2="12" y2="12" stroke="#888" />
@@ -69,7 +69,7 @@ const RentalRequirement = () => {
             <div className="relative gap-1 group mb-3 flex items-center sm:justify-center">
               <span className="hover:cursor-pointer font-semibold flex gap-4 ">
                 Car Insurance
-                <div className="tooltip absolute bg-black text-white text-xs py-1 px-2 rounded  opacity-0 invisible group-hover:opacity-100 w-48 flex flex-wrap text-clip text group-hover:visible transition duration-300 ease-in-out  bottom-6 -right-6">
+                <div className="tooltip absolute bg-black text-white text-xs py-1 px-2 rounded  opacity-0 invisible group-hover:opacity-100 w-48 flex flex-wrap text-clip text group-hover:visible transition duration-300 ease-in-out bottom-[30px] left-0">
                   Minimum Age requirements are strictly enforced and ensure
                   proper insurance protection. All renters who allow an underage
                   driver will be fined $2,500 and their rental will be
@@ -85,7 +85,7 @@ const RentalRequirement = () => {
                 stroke="currentColor"
                 stroke-width="2"
                 stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinejoin="round"
               >
                 <circle cx="12" cy="12" r="10" stroke="#888" />
                 <line x1="12" y1="16" x2="12" y2="12" stroke="#888" />
@@ -95,56 +95,12 @@ const RentalRequirement = () => {
           </div>
           <div>
             <div className="relative group mb-3 flex sm:justify-center">
-              <span className="0 hover:cursor-pointer font-semibold">
-                21+
-                <div className="tooltip absolute bg-black text-white text-xs py-1 px-2 rounded  opacity-0 invisible group-hover:opacity-100 w-48 flex flex-wrap text-clip text group-hover:visible transition duration-300 ease-in-out  bottom-6 -right-6">
-                  Minimum Age requirements are strictly enforced and ensure
-                  proper insurance protection. All renters who allow an underage
-                  driver will be fined $2,500 and their rental will be
-                  immediately canceled.
-                </div>
-              </span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                width="18"
-                height="18"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <circle cx="12" cy="12" r="10" stroke="#888" />
-                <line x1="12" y1="16" x2="12" y2="12" stroke="#888" />
-                <line x1="12" y1="8" x2="12" y2="8" stroke="#888" />
-              </svg>
+              <span className="0 hover:cursor-pointer font-semibold">21+</span>
             </div>
             <div className="relative group mb-3 flex sm:justify-center">
               <span className="0 hover:cursor-pointer font-semibold">
                 United States Drivers Licences
-                <div className="tooltip absolute bg-black text-white text-xs py-1 px-2 rounded  opacity-0 invisible group-hover:opacity-100 w-48 flex flex-wrap text-clip text group-hover:visible transition duration-300 ease-in-out  bottom-6 -right-6">
-                  Minimum Age requirements are strictly enforced and ensure
-                  proper insurance protection. All renters who allow an underage
-                  driver will be fined $2,500 and their rental will be
-                  immediately canceled.
-                </div>
               </span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                width="18"
-                height="18"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <circle cx="12" cy="12" r="10" stroke="#888" />
-                <line x1="12" y1="16" x2="12" y2="12" stroke="#888" />
-                <line x1="12" y1="8" x2="12" y2="8" stroke="#888" />
-              </svg>
             </div>
             <div className="relative gap-1 group mb-3  items-center flex sm:justify-center">
               <span className="hover:cursor-pointer font-semibold flex gap-4 ">
@@ -164,7 +120,7 @@ const RentalRequirement = () => {
                 stroke="currentColor"
                 stroke-width="2"
                 stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinejoin="round"
               >
                 <circle cx="12" cy="12" r="10" stroke="#888" />
                 <line x1="12" y1="16" x2="12" y2="12" stroke="#888" />

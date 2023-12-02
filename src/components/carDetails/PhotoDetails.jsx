@@ -1,5 +1,7 @@
+import { useNavigate } from "react-router-dom";
 import Gallery from "./gallery";
 const PhotoDetails = () => {
+  const navigate = useNavigate();
   return (
     <div className="m-auto max-w-[1400px] px-5">
       <div className="xl:flex xl:justify-between xl:items-center mb-7">
@@ -33,7 +35,10 @@ const PhotoDetails = () => {
           </div>
         </div>
         <div className="mt-5 xl:mt-0">
-          <button className="bg-orange-500 rounded-sm px-4 py-2 hover:bg-orange-600 text-white uppercase">
+          <button
+            onClick={() => navigate("/book-now")}
+            className="bg-orange-500 rounded-sm px-4 py-2 hover:bg-orange-600 text-white uppercase"
+          >
             call to book
           </button>
         </div>

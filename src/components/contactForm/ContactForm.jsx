@@ -1,6 +1,9 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 function ContactForm() {
+  const [sentEmail, setSentEmail] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -8,18 +11,51 @@ function ContactForm() {
     message: "",
     checkbox: false,
   });
+
   const handleOnChange = (e) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
     });
   };
-  const handleSubmit = (e) => {
+
+  const sendEmail = (e) => {
     e.preventDefault();
-    console.log(formData);
+
+    let additionalData = localStorage.getItem("quote");
+    additionalData = JSON.parse(additionalData);
+    const templateMessate = { ...formData, ...additionalData };
+
+    emailjs
+      .send(
+        "service_b1c2ynm",
+        "template_bkkrm9c",
+        templateMessate,
+        "user_ZolwYIVUoOatUHmZjVVDB"
+      )
+      .then(
+        (result) => {
+          if (result.text === "OK") {
+            setSentEmail(true);
+            localStorage.removeItem("quote");
+          }
+        },
+        (error) => {
+          setSentEmail(false);
+        }
+      );
   };
+
+  useEffect(() => {
+    if (sentEmail) {
+      setTimeout(() => {
+        setSentEmail(false);
+      }, 3000);
+    }
+  }, [sentEmail]);
+
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col">
+    <form onSubmit={sendEmail} className="flex flex-col">
       <div className="formGroup mb-4 flex flex-col">
         <label htmlFor="name" className="mb-2">
           Your Name:
@@ -89,12 +125,21 @@ function ContactForm() {
           purchase.
         </p>
       </div>
-      <button
-        className="bg-[#f8ac07]  hover:bg-[#e7b607] text-white font-semibold text-[17px] py-2 px-3"
-        type="submit"
-      >
-        Submit
-      </button>
+      {sentEmail ? (
+        <button
+          className="bg-[#00aa00]  hover:bg-[#43e707] text-white font-semibold text-[17px] py-2 px-3"
+          type="submit"
+        >
+          Message Sent
+        </button>
+      ) : (
+        <button
+          className="bg-[#f8ac07]  hover:bg-[#e7b607] text-white font-semibold text-[17px] py-2 px-3"
+          type="submit"
+        >
+          Submit
+        </button>
+      )}
     </form>
   );
 }

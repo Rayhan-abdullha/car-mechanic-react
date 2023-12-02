@@ -10,7 +10,6 @@ const SingleCarInfo = () => {
     <MainLayout>
       <div className="carDetails-page pt-[70px] md:pt-[100px]">
         <PhotoDetails />
-
         <section className="m-auto max-w-[1400px] px-12 my-[70px]">
           <nav className="mb-5">
             <ul className="flex justify-evenly gap-1">

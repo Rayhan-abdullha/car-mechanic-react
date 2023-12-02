@@ -35,7 +35,11 @@ const Navbar = () => {
   return (
     <div className="bg-black text-[#bdc3c7]">
       <div className="m-auto px-5 max-w-[1400px] flex md:block items-center justify-between py-5 md:py-0">
-        <Topbar />
+        {
+          showIcon ? <div className="logo cursor-pointer" onClick={() => navigate("/")}>
+          <img className="w-[100px]" src={logo} alt="notfound" />
+        </div> : <Topbar />
+        }
         {showIcon ? (
           <div onClick={handleShowMenu} className="pb-5 ml-[-7px]">
             <CgMenuRound className="text-[40px] cursor-pointer font-bold text-white" />

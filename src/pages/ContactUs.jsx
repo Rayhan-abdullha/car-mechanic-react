@@ -1,6 +1,5 @@
 import ContactForm from "../components/contactForm/ContactForm";
 import MainLayout from "./../layout/MainLayout";
-
 const ContactUs = () => {
   return (
     <MainLayout>
